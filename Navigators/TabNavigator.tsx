@@ -4,8 +4,11 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import WelcomeScreen from "../screens/WelcomeScreen";
 import GaleriaScreen from "../screens/GaleriaScreen";
+import Calculo from "../screens/Calculo";
 
 const Tab= createMaterialBottomTabNavigator();
+
+    
 
 function MyTabs(){
     return(
@@ -19,6 +22,7 @@ function MyTabs(){
                     )
                 }}
             />
+            <Tab.Screen name= 'Calculo' component={Calculo}/>
         </Tab.Navigator>
     )
 }
